@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Day 2 - 30Aug Assignment</title>
+</head>
+<body>
+
+    <script>
+    //Program to serach for a character in a string
+	let name = 'Pooja Taneja'
+	let character = 'n'
+	console.log('Search for a character at index is ' + name.indexOf(character))
+	
+	//Program to convert minutes to seconds
+	let min = 60
+	let sec = min*60
+	console.log('Seconds are ' + sec)
+	
+	//Program to search for an element in a array of strings
+	let arr = ['qaz','wsx','edc','rfv','tgvab']
+	let searched_elmt = 'rfv'
+	for(let i=0;i<arr.length;i++){
+		if(arr[i] == searched_elmt){
+			console.log(searched_elmt +' searched element found at index ' + i)
+		}
+	}
+	
+	//Program to display only elements containing 'a' in them from a array
+	for(let i=0;i<arr.length;i++){
+		if(arr[i].includes("a")){
+			console.log('Elements are ' + arr[i] + 'at index ' + i)
+		}
+	}
+	
+	//Print an array in reverse order
+	for(let i=arr.length-1; i>=0; i--) {
+		console.log(`Element ${i+1} is ${arr[i]}`);
+	}
+
+    </script>
+</body>
+</html>
